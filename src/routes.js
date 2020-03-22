@@ -28,6 +28,7 @@ import Language from "@material-ui/icons/Language";
 import DashboardPage from "views/Dashboard/Dashboard.js";
 import UserProfile from "views/UserProfile/UserProfile.js";
 import CustomerProfile from "views/CustomerProfile/CustomerProfile";
+import CreateCustomer from "views/CreateCustomer/CreateCustomer";
 //import TableList from "views/TableList/TableList.js";
 import CustomerList from "views/CustomerList/CustomerList";
 import Typography from "views/Typography/Typography.js";
@@ -47,6 +48,13 @@ const dashboardRoutes = [
     layout: "/admin"
   },
   {
+    path: "/create",
+    name: "Create Customer",
+    icon: Person,
+    component: CreateCustomer,
+    layout: "/admin"
+  },
+  {
     path: "/user",
     name: "Customer Profile",
     rtlName: "ملف تعريفي للمستخدم",
@@ -62,7 +70,7 @@ const dashboardRoutes = [
     component: CustomerList,
     layout: "/admin"
   },
-  {
+  /*{
     path: "/typography",
     name: "Typography",
     rtlName: "طباعة",
@@ -93,7 +101,7 @@ const dashboardRoutes = [
     icon: Notifications,
     component: NotificationsPage,
     layout: "/admin"
-  }
+  }*/
 ];
 
 export default dashboardRoutes;
